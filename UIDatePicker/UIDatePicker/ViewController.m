@@ -23,10 +23,12 @@
     self.datePicker = aDatePicker;
     self.datePicker.datePickerMode = UIDatePickerModeCountDownTimer;
     self.datePicker.center = self.view.center;
-    //设置成时间模式
+    
+    //设置显示模式
     self.datePicker.datePickerMode=UIDatePickerModeCountDownTimer;
     self.datePicker.minuteInterval = 5;
     
+    //设置时间
     [self.datePicker setDate:[NSDate date] animated:YES];
     
     [self.view addSubview:self.datePicker];
